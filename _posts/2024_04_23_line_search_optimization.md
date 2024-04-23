@@ -1,8 +1,6 @@
 ---
 title: Non-linear Optimization Line Search Methods
 date: 2024-04-23 20:37:59 +0100
-categories: [Math, Optimization]
-tags: [line_search]
 ---
 
 test!
