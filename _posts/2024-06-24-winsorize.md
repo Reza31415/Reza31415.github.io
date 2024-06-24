@@ -6,14 +6,12 @@ categories: [Mathematics, Algorithms]
 tags: [statistics, winsorize, outliers]
 math: false
 ---
-# Winsorize
-
-Data often contains outliers which skew the result of analysis. [Winsorize](https://en.wikipedia.org/wiki/Winsorizing) replaces these outliers by some specified values. Typically, values below Nth and above Mth [percentile](https://en.wikipedia.org/wiki/Percentile) are replaced by Nth and Mth percentile values.
+Data often contains outliers which skew the result of analysis. [Winsorize](https://en.wikipedia.org/wiki/Winsorizing) replaces these outliers by some specified values. Typically, values below Nth and above Mth [percentile](https://en.wikipedia.org/wiki/Percentile) are replaced by the Nth and Mth percentile values.
 Using the [winsorize](https://docs.scipy.org/doc/scipy-1.13.1/reference/generated/scipy.stats.mstats.winsorize.html) function from Scipy, we can compare the result of a winsorized data below:
 ![img-description](/assets/post_assets/2024-06-24-winsorize/bokeh_plot.png)
 _Showing the result of a winsorized data_
 
-As it is seen the highest and lowest outliers are replaced with the 10% highest and 20% lowest percentiles, however, the outlier in the near -2.2 is still there since this outlier does not fall within the 10% highest or 20% lowest outliers.
+As it is seen the highest and lowest outliers are replaced with the 10% highest and 20% lowest percentiles, however, the outlier near -2.2 is still there since this outlier does not fall within the 10% highest or 20% lowest outliers.
 
 ```python
 import numpy as np
