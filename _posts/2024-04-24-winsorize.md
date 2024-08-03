@@ -2,7 +2,7 @@
 title: Winsorize
 date: 2024-04-25 17:47:12 +0100
 toc: true
-categories: [Mathematics, Algorithms]
+categories: [Mathematics, Statistics]
 tags: [statistics, winsorize, outliers]
 math: false
 ---
